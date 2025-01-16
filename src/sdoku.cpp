@@ -1,6 +1,6 @@
 #include "sdoku.h"
 
-const std::vector<std::vector<int> > &get_sduku_table() {
+const std::vector<std::vector<int>> &get_sduku_table() {
   // clang-format off
     static std::vector<int> cell_0 = {
         0, 3, 5,
@@ -41,13 +41,13 @@ const std::vector<std::vector<int> > &get_sduku_table() {
         7, 6, 0};
   // clang-format on
 
-  static const std::vector<std::vector<int> > sdoku_table = {
+  static const std::vector<std::vector<int>> sdoku_table = {
       cell_0, cell_1, cell_2, cell_3, cell_4, cell_5, cell_6, cell_7, cell_8};
 
   return sdoku_table;
 }
 
-SdokuTable::SdokuTable(const std::vector<std::vector<int> > &table)
+SdokuTable::SdokuTable(const std::vector<std::vector<int>> &table)
     : cell(table) {}
 
 SdokuTable::~SdokuTable() = default;
