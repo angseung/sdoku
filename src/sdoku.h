@@ -1,6 +1,7 @@
 #ifndef __SDOKU_H__
 #define __SDOKU_H__
 
+#include <algorithm>
 #include <iostream>
 #include <numeric>
 #include <vector>
